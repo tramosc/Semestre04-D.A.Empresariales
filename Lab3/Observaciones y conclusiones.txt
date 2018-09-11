@@ -1,0 +1,42 @@
+OBSERVACIONES:
+
+- En algunas ocasiones ha de cambiar en la barra de buscador localhost 
+por gestor laravel para evitar errores.
+
+- Si entramos en el directorio donde creamos anteriormente nuestro nuevo 
+proyecto Laravel veremos que hay muchas carpetas, cada carpeta 
+tiene unos archivos que cada uno tiene su funcionalidad.
+
+- Hay que percatarse que se hayan cambiado las variables return y return 
+view ya que estas nos mostraran las listas vinculadas.
+
+- Creamos y desarrollamos como también modificamos archivos de 
+controladores.
+
+- Modificamos y manifestamos notificaciones de error en caso de que se 
+trate de averiguar si se buscara un link erróneo vinculado al proyecto.
+
+CONCLUSIONES:
+
+- Las rutas se tienen que poner en el archivo  php  si fuese una ruta web
+.Puedes añadir tantas rutas como quieras, pero las rutas que no estén 
+en estos archivos al acceder y detectará que no existe Laravel 
+te devolverá un error 404.
+
+- Hasta el momento hemos visto solamente como devolver una 
+cadena para una ruta y como asociar una vista a una ruta 
+directamente en el fichero de rutas.
+
+- Las vistas no es más que lo que tú ves cuando entras a una web. 
+En Laravel las vistas se encuentran enresources/views
+
+- Los controladores se almacenan en ficheros PHP en 
+la carpeta app/Http/Controllers y normalmente se les añade 
+el sufijo Controller
+
+- Todos los controladores tienen que extender la clase base 
+Controller. Esta clase viene ya creada por defecto con la instalación 
+de Laravel, la podemos encontrar en la carpeta app/Http/Controllers
+
+
+

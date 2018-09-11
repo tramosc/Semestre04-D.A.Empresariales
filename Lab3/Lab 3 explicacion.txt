@@ -1,0 +1,102 @@
+3.Probaremos el Index de la aplicación. Ingrese en la URL, 
+la siguiente dirección:
+
+http://gestorlaravel.com/
+
+Imagen: /Imagenes/lab03-03.PNG
+-----------------------------------------------------------------------
+
+8. Modifique la ruta de home por: “/validado”Ingrese a la siguiente 
+URL:http://gestorlaravel.com/validado
+
+El resultado seráser el siguiente:
+
+Imagen: /Imagenes/lab03-08.PNG
+
+------------------------------------------------------------------------
+Comose observala redirección se hizo de manera automática al 
+action “getInicio” del controlador validación. Esto se debe a que 
+el usuario no está “logeado” correctamente y siempre se le mostrará 
+el formulario de inicio de sesiónen caso de que la función 
+handle del Middleware Authenticate no lo valide como tal. 
+
+Ingrese a la siguiente 
+
+URL:http://localhost/GestorImagenes/public/validado/fotos
+
+El resultado será el siguiente:
+
+Imagen: /Imagenes/pag6lab03.PNG
+
+--------------------------------------------------
+De  esta  manera  estamos  diciendo  que,  
+sin importan que el usuario se encuentre “logeado”, 
+se acceda a la petición recibida en los parámetros recibidos.
+Ahora intente ingresar a la siguiente URL:
+
+http://gestorlaravel.com/validado/fotos
+
+El resultado será el siguiente:
+
+Imagen: /Imagenes/pag7lab03.PNG
+
+
+----------------------------------------------------
+
+Ahora intente ingresar una URL inexistente.
+
+El resultado será el siguiente:
+
+Imagen: /Imagenes/pag7lab03_01.PNG
+
+--------------------------------------------------------
+
+1.Haga una copia del archivo GestorImagenes/Resources/Views/errors/503.blade.php, 
+en el mismo directorio, pero renombre el nuevo archivo a “404.blade.php”.
+
+2.Abra el archivo copiado y cambie el texto “be right back” por 
+“not found page”
+
+3.Nuevamente, intente introducir una URL inexistente.
+
+El resultado será el siguiente:
+
+Imagen: /Imagenes/pag7lab03 pagfinal.PNG
+
+-----------------------------------------------------------------
+Pagina 8
+
+Probando la funcionalidad del código.
+
+	1.Abra el buscador y coloque la siguiente URL:
+
+		http://gestorlaravel.com
+
+El resultado será el siguiente:
+
+Imagen: /Imagenes/pag8.PNG
+
+------------------------------------------------------------------
+
+
+	2.Procure ingresar a “Iniciar Sesión”y luego a “Registrarse”.
+
+
+El resultado será el siguiente:
+
+Imagen: /Imagenes/pag8_1.PNG
+Imagen: /Imagenes/pag8_2.PNG
+
+----------------------------------------------------------------------
+
+11.En el navegador ponga la siguiente dirección:
+
+http://gestorlaravel.com/validacion/inicio
+
+De la misma manera intente entrar al link registrarse, el resultado debería ser el siguiente:
+
+Imagen: /Imagenes/pag11.PNG
+
+Para recuperar la contraseña el resultado es este:
+Imagen: /Imagenes/pag11-2.PNG
+

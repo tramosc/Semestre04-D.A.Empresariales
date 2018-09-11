@@ -1,0 +1,40 @@
+OBSERVACIONES:
+
+-Hubo un problema con respecto  a que programa utilizar 
+ya que usar xamp en algunas máquinas no era compatible y en mi 
+caso use xamp ya que esta es más compatible con 
+diversos sistemas operativos de Windows 
+
+-El proyecto nosotros crearemos en este curso será un gestor de 
+imágenes y álbumes que un usuario registrado podrá realizar a manera 
+de crear álbumes modificar y otros derivados del mismo
+
+-Realizamos la modificación de diversos archivos de formato php 
+y otras extensiones.
+
+-La mayor parte de las variables que aparecen por defecto se 
+encuentran en inglés y ya tiene  archivos de control de errores.
+
+-Adaptamos los diferentes archivos y variables a nuestro idioma 
+haciendo mejor el entendimiento y evitar errores.
+
+CONCLUSIONES
+
+- Realizamos los primeros cimientos para realizar proyectos usando 
+programas como laravel.
+
+- El objetivo de Laravel es el de ser un framework que permita el uso 
+de una sintaxis refinada y expresiva para crear código de forma 
+sencilla, evitando el “código espagueti” y permitiendo multitud de 
+funcionalidades. 
+
+- Aprovecha todo lo bueno de otros frameworks y utiliza las características 
+de las últimas versiones de PHP.
+
+- La mayor parte de su estructura está formada por dependencias, 
+especialmente de Symfony, lo que implica que el desarrollo de 
+Laravel dependa también del desarrollo de sus dependencias.
+
+- Laravel es una excelente herramienta de software para el 
+desarrollo diario y dispone de algunos de los factores claves 
+que hacen que un proyecto tenga éxito.
