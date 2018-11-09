@@ -1,0 +1,56 @@
+CREANDO MIGRACIÓN DE MODELOS A LA BASE DE DATOS
+
+Para migrar con éxito nuestros modelos a la base de datos, 
+primero debemos crear archivos de migración.
+
+1.Ingrese a la ventada de comandos con ruta en el directorio de 
+nuestro proyecto.
+
+2.Ingrese el siguiente comando para crear el archivo “CrearTablaAlbumes
+
+
+”php artisan make:migration --create="albumes" CrearTablaAlbumes
+
+Resultado generado: /Imagen/lab04_01.PNG
+
+3.Ingrese el siguiente comando para crear el archivo “CrearTablaFotos”
+
+php artisan make:migration --create="fotos" CrearTablaFotos
+
+Resultado generado: /Imagen/lab04_02.PNG
+
+
+6.Ejecute el siguiente comando para proceder con la migración:
+
+php artisan migrate
+
+Resultado generado: /Imagen/lab04_03.PNG
+
+
+7.Verifique mediante phpmyadmin, que las tablas se hayan creado correctamente
+ en la base de datos.
+
+Resultado generado: /Imagen/lab04_04.PNG
+
+
+CREANDO SEEDERS
+
+se ejecuto el comando de seeds 
+
+Resultado generado: /Imagen/lab04_ejecutar seeds.PNG
+
+Explore la base de datos y responda:
+¿Qué sucedió?
+Revisamos nuestra base de datos y encontramos que en cada tabla creada de nuestra base de datos vimos que se 
+agregaron en total 25 elementos a cada tabla del cual se generaron producto de nuestra programacion.
+
+BD.albumes (cambios phpMyAdmin):/Imagen/lab04_BDalbumes.PNG
+
+BD.fotos (cambios phpMyAdmin):/Imagen/lab04_BDfotos.PNG
+
+BD.usuarios (cambios phpMyAdmin):/Imagen/lab04_BDusuarios.PNG
+
+
+
+
+
