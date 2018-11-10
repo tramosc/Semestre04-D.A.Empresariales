@@ -1,0 +1,16 @@
+Observaciones
+
+- Es escencial el orden al momento de crear seeders.
+- Observamos diferentes formas de hallar errores en el desarrollo de los laboratorios.
+- Observamos las diferentes funciones y formas que podemos usar Wamp.
+- Observamos como podemos agregar diversos datos en phpmyadmin.
+- Aprendimos un concepto breve sobre el diseño de seeders.
+
+
+Conclusiones
+
+- Aprendimos a usar comandos de importacion de datos a una base de datos como lo es phpmyadmin 
+- Creamos datos para diferentes tablas de manera aleatoria de la cual nos servira al momento de realizar una prueba de plataforma de usuarios.
+- Usamos metodos de validadcion para poder validar nuestros datos de usuareios a nuestra base de datos.
+- Aprendimos a validar datos de usuario en el gestor laravel usando programacion de php basico.
+- Con lo desarrollado hasta el momento hemos asemejado nuestro laboratorio a una plataforma de registro de usuario de los cuales tiene funciones basicas de control de datos.
