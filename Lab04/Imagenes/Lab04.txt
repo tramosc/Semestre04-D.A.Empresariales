@@ -50,6 +50,18 @@ BD.fotos (cambios phpMyAdmin):/Imagen/lab04_BDfotos.PNG
 
 BD.usuarios (cambios phpMyAdmin):/Imagen/lab04_BDusuarios.PNG
 
+Control de errores capturas finales:
+
+/Imagen/lab04_comprobar errores(1)
+
+/Imagen/lab04_comprobar errores(2)
+
+
+-----------------------------------------------
+- ¿Cuáles fueron las credenciales utilizadas para acceder al sistema?
+El ingreso de datos relacionados a la cuenta del usuario correo y contraseña almacenada en la base de datos
+
+
 
 
 
