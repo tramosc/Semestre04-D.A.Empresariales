@@ -3,6 +3,7 @@
 use GestorImagenes2\Album;
 use GestorImagenes2\Foto;
 use GestorImagenes2\Http\Requests\MostrarFotosRequest;
+
 class FotoController extends Controller {
 	/**
 	 * Create a new controller instance.
@@ -20,6 +21,7 @@ class FotoController extends Controller {
 	 * @return Response
 	 */
 	public function getIndex(MostrarFotosRequest $request){
+
 		$id=$request->get('id');
 		$album=Album::find($id);
 		$fotos=$album->fotos;

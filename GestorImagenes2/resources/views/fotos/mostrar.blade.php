@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container-fluid">
-<p><a href="/validado/albumes/crear-album" class="btn btn-primary" role=button>Crear Foto</a></p>
+<p><a href="/validado/albumes/crear-foto" class="btn btn-primary" role=button>Crear Foto</a></p>
 @if(sizeof($fotos)>0)
     @foreach($fotos as $foto)
     <div class="row">
@@ -20,8 +20,8 @@
 @else
 <div class="alert alert-danger">
   <p>Al parecer este album no tiene fotos.Crea una!</p>
-  </div>
-  @endif
-  </div>
+</div>
+@endif
+</div>
 @endsection
 fotos

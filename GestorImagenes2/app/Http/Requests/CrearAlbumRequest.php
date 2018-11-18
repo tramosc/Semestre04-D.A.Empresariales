@@ -1,10 +1,9 @@
 <?php namespace GestorImagenes2\Http\Requests;
 
 use GestorImagenes2\Http\Requests\Request;
-use Illuminate\Support\Facades\Auth;
-use GestorImagenes2\Album;
 
-class MostrarFotosRequest extends Request {
+class CrearAlbumRequest extends Request {
+
 	/**
 	 * Determine if the user is authorized to make this request.
 	 *
@@ -12,15 +11,9 @@ class MostrarFotosRequest extends Request {
 	 */
 	public function authorize()
 	{
-		$user=Auth::user();
-		$id=$this->get('id');
-		$album=$user->albumes()->find($id);
-		if($album){
-			return true;
-		}
-
-		return false;
+		return true;
 	}
+
 	/**
 	 * Get the validation rules that apply to the request.
 	 *
@@ -29,7 +22,9 @@ class MostrarFotosRequest extends Request {
 	public function rules()
 	{
 		return [
-			'id'=>'required',
+			'nombre'=>'required',
+      'descripcion'=>'required',
 		];
 	}
+  
 }

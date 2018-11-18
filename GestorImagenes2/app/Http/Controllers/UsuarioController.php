@@ -1,5 +1,5 @@
 <?php namespace GestorImagenes2\Http\Controllers;
-use GestorImagenes2\Http\Request\EditarPerfilRequest;
+use GestorImagenes2\Http\Requests\EditarPerfilRequest;
 use Illuminate\Support\Facades\Auth;
 class UsuarioController extends Controller {
 	/**

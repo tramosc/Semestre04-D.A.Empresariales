@@ -67,15 +67,16 @@ El ingreso de datos relacionados a la cuenta del usuario correo y contraseña alm
 (---------------CORREGIDO DEL CODIGO EN COMPARACION----------------)
 - RESULTADO DESPUES DE USAR UN USUARIO DE NUESTRA BASE DE DATOS
 
-CesarTest
+Contraseña de prueba: CesarTest
 
-Cesar@Test.com
+Uusario de prueba: Cesar@Test.com
 
 
 Probando el código:(pag19)
 1.Intente recuperar la contraseña con un correo válido, dos contraseñas correctas (con más de 5 caracteres), pero con pregunta y/o respuesta equivocada. Anote los resultados
 
-vemos que colocando en su mayporia todo correcto vemos que nos mana error de validacion de la cual solo se conservan los parameytros de nombre y correo
+Vemos que colocando en su mayoria todo correcto vemos que nos llama error de validacion de la cual solo se conservan los parametros de nombre y correo
+
 
 
 

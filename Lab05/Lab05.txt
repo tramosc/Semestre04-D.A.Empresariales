@@ -2,4 +2,26 @@ CREANDO LA FUNCIONALIDAD: ACTUALIZAR PERFIL DE USUARIO
 
 7.Ahora ingrese al sistema, y escoja la opción actualizar perfil, el resultado debería ser parecido al siguiente:
 
+imagen:lab05_vistaActualizarPerfil.PNG
+
+
+14. Para comprobar, inicie sesión, actualice su perfil como convenga y el resultado debería ser el siguiente:
+
+Ejecucion Exitosa Cambios actualizados
+Iniciamos sesion primero:
+imagen: lab05_actualizarusuario(iniciosesion).PNG
+
+Nos dirigimos a actualizar perfil:
+imagen: lab05_actualizarusuario(vista_actualizar).PNG
+
+Resultado Final:
+
+imagen: lab05_vistaActualizarPerfil(exitoso).PNG
+
+
+
+CREANDO LA FUNCIONALIDAD DE MOSTRAR ÁLBUMES
+En caso de que el arreglo esté vacío (lo que indica que el usuario tendría 0 álbumes), se imprimirá un mensaje para indicarle al usuario de que no tiene álbumes.
+
+imagen: lab05_vistaalbumes(sinfotos).PNG
 
