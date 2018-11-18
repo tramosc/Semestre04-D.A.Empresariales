@@ -3,8 +3,6 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-use GestorImagenes2\Album;
-use GestorImagenes2\Foto;
 use GestorImagenes2\Usuario;
 
 class UsuariosSeeder extends Seeder {

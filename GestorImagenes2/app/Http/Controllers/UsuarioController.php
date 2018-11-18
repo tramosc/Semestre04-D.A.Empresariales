@@ -1,5 +1,6 @@
 <?php namespace GestorImagenes2\Http\Controllers;
-
+use GestorImagenes2\Http\Request\EditarPerfilRequest;
+use Illuminate\Support\Facades\Auth;
 class UsuarioController extends Controller {
 	/**
 	 * Create a new controller instance.
@@ -17,10 +18,23 @@ class UsuarioController extends Controller {
 	 * @return Response
 	 */
 	public function getEditarPerfil(){
-		return 'Mostrando formulario';
+		return view('usuario.actualizar');
 	}
-  public function postEditarPerfil(){
-    return 'Generando actualizacion de perfil';
+  public function postEditarPerfil(EditarPerfilRequest $request){
+
+		$usuario=Auth::user();
+		$nombre=$request->get('nombre');
+		$usuario->nombre=$nombre;
+
+		if($request->has('password')){
+			$usuario->password=bcrypt($request->get('password'));
+		}
+		if($request->has('pregunta')){
+			$usuario->pregunta=$request->get('pregunta');
+			$usuario->respuesta=$request->get('respuesta');
+		}
+		$usuario->save();
+		return redirect('/validado')->with('actualizado', 'Su perfil ha sido actualizado');
   }
   public function missingMethod($parameters=array()){
     abort(404);

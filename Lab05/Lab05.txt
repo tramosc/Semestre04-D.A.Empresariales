@@ -1,0 +1,5 @@
+CREANDO LA FUNCIONALIDAD: ACTUALIZAR PERFIL DE USUARIO
+
+7.Ahora ingrese al sistema, y escoja la opción actualizar perfil, el resultado debería ser parecido al siguiente:
+
+

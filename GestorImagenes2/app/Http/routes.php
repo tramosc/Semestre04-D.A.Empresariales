@@ -6,7 +6,7 @@ Route::controllers([
 	'validacion' => 'validacion\ValidacionController',
 	'validado/fotos' => 'FotoController',
 	'validado/albunes' => 'AlbumController',
-	'validado/usuario' => 'UsuarioController',
+	'validado/usuario' => 'usuarioController',
 	'validado' => 'InicioController',
 	'/' => 'BienvenidaController'
 ]);

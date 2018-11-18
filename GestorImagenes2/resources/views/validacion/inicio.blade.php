@@ -24,18 +24,28 @@
 							</div>
 				 @endif
 
+				 @if (Session::has('recuperada'))
+						 <div class="alert alert-success">
+								 <strong>Esta Hecho!</strong>Cambios Realizados<br><br>
+								 {{Session::get('recuperada')}}
+						 </div>
+				@endif
+
+
+
+
 					<form class="form-horizontal" role="form" method="POST" action="/validacion/inicio">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
+							<label class="col-md-4 control-label">Correo Electronico</label>
 							<div class="col-md-6">
 								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
+							<label class="col-md-4 control-label">Contraseña</label>
 							<div class="col-md-6">
 								<input type="password" class="form-control" name="password">
 							</div>
@@ -57,7 +67,7 @@
 									Iniciar sesion
 								</button>
 
-								<a href="/password/email">Olvidé mi contraseña</a>
+								<a href="/validacion/recuperar">Olvidé mi contraseña</a>
 							</div>
 						</div>
 					</form>

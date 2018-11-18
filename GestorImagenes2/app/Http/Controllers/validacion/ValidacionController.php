@@ -5,6 +5,11 @@ use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
+use GestorImagenes2\Http\Requests\IniciarSesionRequest;
+use GestorImagenes2\Http\Requests\RecuperarContrasenaRequest;
+use GestorImagenes2\Usuario;
+
+
 
 class ValidacionController extends Controller {
 
@@ -75,12 +80,12 @@ class ValidacionController extends Controller {
 		 * @param  \Illuminate\Http\Request  $request
 		 * @return \Illuminate\Http\Response
 		 */
-		public function postInicio(Request $request)
+		public function postInicio(IniciarSesionRequest $request)
 		{
-			
-			$this->validate($request, [
-				'email' => 'required|email', 'password' => 'required',
-			]);
+
+			//$this->validate($request, [
+			//	'email' => 'required|email', 'password' => 'required',
+			//]);
 
 			$credentials = $request->only('email', 'password');
 
@@ -145,8 +150,20 @@ class ValidacionController extends Controller {
 		public function getRecuperar(){
 			return view('validacion.recuperar');
 		}
-		public function postRecuperar(){
-			return 'recuperando contraseña';
+		public function postRecuperar(RecuperarContrasenaRequest $request){
+			$pregunta=$request->get('pregunta');
+			$respuesta=$request->get('respuesta');
+			$email=$request->get('email');
+			$usuario=Usuario::where('email', '=', $email)->first();
+
+			if ($pregunta===$usuario->pregunta && $respuesta ===$usuario->respuesta) {
+				$contraseña=$request->get('password');
+				$usuario->password=bcrypt($contraseña);
+				$usuario->save();
+				return redirect('/validacion/inicio')->with(['recuperada'=>'La contraseña se cambio. Inicia sesion']);
+			}
+			return redirect('/validacion/recuperar')->withInput($request->only('email', 'pregunta'))
+			->withErrors(['pregunta'=>'La pregunta o respuesta ingresada no coinciden']);
 		}
 
 	}
