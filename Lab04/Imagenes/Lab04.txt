@@ -58,9 +58,20 @@ Control de errores capturas finales:
 
 
 -----------------------------------------------
+
+
+
+TAREA: INVESTIGUE INYECCIÓN POR DEPENDENCIA EN LARAVEL.
+La Inyección de Dependencias es un patrón de diseño orientado a objetos en el que se suministran objetos a una clase en lugar de ser la propia clase quien cree el objeto. El término fue acuñado por primera vez por Martin Fowler. En la práctica, consiste en pasar a los componentes de software sus dependencias mediante sus constructores, sus propiedades o sus métodos setter. 
+
+------------------------------------------------------------------------
 - ¿Cuáles fueron las credenciales utilizadas para acceder al sistema?
 El ingreso de datos relacionados a la cuenta del usuario correo y contraseña almacenada en la base de datos
 
+
+pag 14 resultado de inicio de sesion:
+
+Imagen: lab04_usuario validado.PNG
 
 
 
@@ -69,7 +80,7 @@ El ingreso de datos relacionados a la cuenta del usuario correo y contraseña alm
 
 Contraseña de prueba: CesarTest
 
-Uusario de prueba: Cesar@Test.com
+Usuario de prueba: Cesar@Test.com
 
 
 Probando el código:(pag19)
@@ -77,6 +88,13 @@ Probando el código:(pag19)
 
 Vemos que colocando en su mayoria todo correcto vemos que nos llama error de validacion de la cual solo se conservan los parametros de nombre y correo
 
+2. Intente recuperar la contraseña con todos los datos correctos. ¿Qué sucede?
+
+El sistema nos llevara a la plataforma incial que nos lleva cuando iniciamos sesion de manera normal.
+
+Pag 20 captura final:
+
+imagen: captura final.PNG
 
 
 
