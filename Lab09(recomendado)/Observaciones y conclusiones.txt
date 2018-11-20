@@ -1,0 +1,14 @@
+Observaciones
+•Ha de tener en cuenta la estructura del código a plasmar en el IDE en mi caso Atom.
+•La sintaxis es lo que hay que tener en cuenta para que se pueda ejecutar el proyecto sin problemas.
+•Observamos principios básicos acerca de la estructura de código para desarrollar un proyecto en php y laravel .
+•Aplicamos lo conocido en semestres anteriores ya que es necesario para comprender la programación en php y el uso de comandos cmd para poder realizar migraciones de bases de datos.
+•Observamos las condiciones que se necesitan para poder crear un sistema sustentable en laravel como lo son los request y las funciones que se deben de respetar y tener en cuenta 
+
+Conclusiones
+
+ ?Aprendimos a desarrollar un sistema de creación y edición de elementos como lo son los álbumes y fotos.
+?Aplicamos y creamos archivos en laravel que con su aplicación son necesarios para que este sistema simple pueda funcionar como lo son las vistas y los request.
+?Aprendimos sobre las condiciones que componen este nuevo tipo de archivos como lo son los “rules” y autorizaciones.
+?Aplicamos la vinculación y validación de diferentes vistas y controladores de la cual es necesaria para que se puedan llamar y comunicarse entre si.
+?Definimos métodos para la manipulación de archivos en php para poder editarlos, actualizarlos y eliminarlos a través de condiciones en los request.
