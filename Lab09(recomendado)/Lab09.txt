@@ -1,0 +1,66 @@
+Laravel – Funcionalidad del Proyecto III
+
+CREANDO LA FUNCIONALIDAD PARA ELIMINAR ÁLBUMES Y FOTOS
+
+Si un álbum va a ser eliminado desde la vista: Mostrar de los álbumes.
+¿Será necesario usar un método getEliminarAlbum?
+
+En mi opnion creo que si ya que se quiere obtener la funcion para poder eliminar un album.
+
+Pruebe el programa. Intente eliminar un álbum y verifique los resultados(pag 04)
+
+Para esto se procedio a crear un nuevo albun del cual se procedera a eliminar.
+
+Imagen: Lab09_Vista.png
+
+Y una vez aplicado el boton de eliminar.
+
+Imagen: Lab09_Vista(album eliminado).png
+
+
+
+Ahora continuaremos con la eliminación de Fotos.....
+
+Preguntas de la pagina 5
+
+Explique: ¿Qué hacen las dos funciones importantes en este request?
+
+-En la primera funcion de autorize nos indica los atributos que debe de tenr en cuenta el siustema para considera la eliminacion de la foto.
+
+En la segunda vemos que las condiciones para que se puede ejecutar la regla de la funcion rules que en este caso es una que la foto exista.
+
+
+-Explique línea a línea la funcionalidad del código mostrado en la función.
+
+Toma en cuenta los atributos para que el sistema elimine la foto respectiva de la cual con el uso de terminos de eliminar archivos para poder ver un a confirmacion que se borro la foto.
+
+Investigue: 
+
+Cuál es la finalidad de la función unlink, file_exists y realpath.
+
+Unlink: unlink — Borra un fichero
+Elimina filename. Es similar a la función unlink() de C en Unix. Se generará un error de nivel E_WARNING si se produce un error.
+
+
+Realpath: realpath — Devuelve el nombre de la ruta absoluta canonizado
+realpath() expande todos los enlaces simbólicos y resuelve las referencias de caracteres '/./', '/../' y '/' extra, en la ruta de entrada dada por path y devuelve el nombre de la ruta absoluta canonizado.
+
+
+File_exists: file_exists — Comprueba si existe un fichero o directorio
+Comprueba si existe un fichero o directorio.
+
+
+PRUEBE LA ELIMINACIÓN DE FOTOS
+
+Eliminamos una foto:
+Imagen: Lab09_Foto a eliminar.PNG
+
+Confirmacion de eliminacion:
+Imagen: Lab09_Foto eliminada.PNG
+
+Si el album se encuentra vacio:
+Imagen: Lab09_Vista Principal vacia (final).PNG
+
+
+
+

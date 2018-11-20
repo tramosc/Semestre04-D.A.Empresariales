@@ -1,0 +1,88 @@
+Laravel – Funcionalidad del Proyecto I
+
+
+Antes de agregar las capturas respectivas procederemos a responder la preguntas
+
+5. Diríjase a la vista de Mostrar Álbumes para añadir la funcionalidad de editar un álbum. Al código de esta vista, debería añadírsele las siguientes líneas.
+
+¿Qué hicimos al agregar esa línea?
+
+Procedemos a definir un boton con sus respectivas condiciones si llega el caso de usarse en este caso de editar un album en esta caso uno que ya tengamos y llamara los metodos respectivos programando sus funciones de actualizar album.
+
+¿De qué se encarga la función authorize() en este Request?
+
+De que ne caso de que se llegue a actualizar un albun se le permita a este request proceder a actualizar sin ningun tipo de restriccion.
+
+
+¿Qué se hizo en el código mostrado?
+
+la funcion postActualizarAlbum definimos los parametros necesarios para poder actualizar los datos de los albumes creados y que al terminar de guardarse los cambios nos redireccione a albumes con una notificacion de que se logro actualizar con exito el albun actual creado.
+
+Pruebe el programa y verifique que se encuentra funcionando correctamente.
+
+Cambiando los datos del album creado.
+Imagen: Lab07_Formulario de actualizacion de album.png
+
+Resultado final:
+Imagen: Lab07_Album actualizado con exito.png
+
+
+Pag 5 - CREANDO LA FUNCIONALIDAD PARA EDITAR UNA FOTO – MOVER Y COPIAR ARCHIVOS
+
+Respondiendo a preguntas previas.
+
+Explique: ¿Qué se hizo en esta función?
+
+Se realizo la programacion de la funcion que permita obtener los resultados de actualoizar el contenido de una foto.
+
+
+Explique: (Pag06)¿Qué estamos haciendo en las dos funciones principales de este Request?
+
+Definimos las autorizaciones en la primera funcion que esta relacionado para album.
+
+En la funcion RULES(2da funcion) se definira el retorno de los atributos correspondiente a fotos de las cuales se definen los limites y requerimientos necesarios para subir el archivo y los campos requeridos como lo son el nombre la descriopcion y el archivo para poder actualizar los datos en este caso la foto.
+
+Pag(07)Explique Línea a línea lo que el código pretende hacer:
+
+Como vemos en la funcion postActualizarFoto que abarca de la linea 59-76
+que se procedera a verificar el request luego los atributos principales de fotos(nombre, descripcion y el archivo foto) 
+Despues nos encontramos con un if del cual nos dice que si en el atributo imagen es un archivo se procedera a comprobar caracteristicas como lo es su direccion y su  extension del cual sea compatible para fotos (jpg o png por ejemplo) y el procedimiento de reemplazo para que se logre sustitutir con exito el archivo que se quiere cambiar.
+
+y nos tendra que retornar tanto los datos y la foto cambiada para la vista de nuestra foto.
+
+
+
+
+Desde la línea 69 (el bloque if), ¿por qué tiene que verificarse que la ruta exista?. Es necesario la verificación
+
+Porque como vimos es necesario que estas condiciones existan ya que determinan que el archivo sea exactamente una imagen y no un documento al azar ya que tambien hay  condiciones que determian la extension del archivo y la ruta que determine la veracidad de su ubicacion.
+
+
+¿Qué hace el código de la vista?(pag07)
+hace que se genera una cinta de color verde claro indicando que se logro actualizar la foto con exito.
+
+
+
+
+
+
+
+ACTUALIZAR UNA FOTO 
+
+Vista principal de la foto (inicial)
+
+Imagen: Lab07_Vista principal de la imagen.png
+
+Seleccionamos una imagen nueva para cambiar con la actual 
+
+Imagen: Lab07_Seleccionar imagen de reemplazo.png
+
+Terminamos de llenar el resto de datos para terminar de actualizar la foto
+
+Imagen: Lab07_Datos de foto actualizados.png
+
+Captura final de cambios realizados.
+
+Imagen: Lab07_Confirmacion de actualizacion de foto.png
+
+

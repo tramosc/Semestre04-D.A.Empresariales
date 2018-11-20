@@ -1,0 +1,44 @@
+Laravel – Requests II y Archivos
+
+Pag 4 - Punto 9
+
+Creacion de un nuevo album 
+
+Nos dirigimos a las pestaña de mis albumes y nos mostrara que no hemos creado un nuevo album.
+
+Y procederemos a crear un nuevo album
+
+Imagen: /Imagenes/Lab06_Llenardatos para crear nuevo album.png
+
+Despues nos aparecera el mensaje de confirmacion indicandonos que hemos creado el album con exito.
+
+Imagen: /Imagenes/Lab06_confirmacionde nuevo album.png
+
+La pagina se actualizara y nos mostrara la vista del album ya creado con su respectivo boton de ver fotos (cosa que aun no se ha realizado).
+
+Imagen: /Imagenes/Lab06_muestra del album creado.png
+
+
+
+
+-Pag 6 - Ahora vamos a crear la vista para crear la foto.
+
+Una ves dentro del albun nos indicara una fraja roja indicandonos que no hemos subido ninguna foto y nos recomendara subir una.
+
+Imagen: /Imagenes/Lab06_Vista dentro del nuevo album.png
+
+Entraremos en el boton que nos indica "Crear foto" y nos mostrara un pequeño formulario
+
+Imagen: /Imagenes/Lab06_Formulario para subir una nueva foto.png
+
+Procederemos a llenar los datos y a ubicar una foto para poder subirla.
+
+Imagen: /Imagenes/Lab06_Llenando datos para subir foto.png
+
+Finalmente le damos al unico boton que vemos y nos llevara dentro de nuestro album creado con nuestro elemento con su titulo y su descripcion
+
+Imagen: /Imagenes/Lab06_Resultado final .png
+
+
+
+
