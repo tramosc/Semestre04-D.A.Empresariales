@@ -1,0 +1,25 @@
+Detalles del laboratorio con lo desarrollado en este laboratorio podemos ver que en la primera parte de nuestro laboratorio tene que ver solamente con el alineamiento de nuestros albunes de la cual antes de realizar este laboratorio este se al momento de agregar varios estos se alineaban de la cual no se formaba columnas sino que todo se formaba de manera alineada de la cual nosotros corregimos ese detalle y realizamos el refresh de nuestras bases de datos con los nuevos datos de usuarios que nosotros habiamos acumulado hasta estas fechas.
+
+Observaciones:
+
+Modificamos la estructura solo de las pestañas de las paginas ya que de estas se definiran las alineaciones para darle un mejor orden a los albumes.
+
+Para poder definir este alineamiewnto es necesario usar algunos terminos ya conocidos como lo es un if.
+
+Esta configuracion servira tanto para albumes como para fotos en nuestro proyecto laravel.
+
+Usamos comandos basicos para retroalimentar la misma con datos usados al rededor de este proyecto.
+
+Vemos que hay opciones de corregir algunos errores si es que se presenta a la hora de migrar nuestra base de datos.
+
+Conclusiones
+
+A lo largo del proyecto hemos visto principios basicos del uso php en un proyecto.
+
+De lo cual con lo desarrollado en este proyecto somos capaces de desarrollar un breve sistema que sea respandado por un servidor web.
+
+En nuestro caso se realizado una plataforma de registro y control de albumes con fotos
+
+hemos visto como es que funcionana los programas composer a traves del desarrollo de nuestro proyecto en laravel.
+
+A lo largo del proyecto hemos visto la importancia de la sintaxis ya que descuidando un poco de esta puede hacer que el proyecto no llegue a funcionar.
